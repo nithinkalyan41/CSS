@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 100px;
+      }
       .wrap {
         width: 200px;
         height: 200px;
@@ -23,13 +26,22 @@
         height: 200px;
         padding: 20px;
         text-align: center;
-        transform: rotateX(60deg) rotateY(30deg) rotateZ(30deg);
+        transform: perspective(200px) rotateY(45deg);
+      }
+      img {
+        width: 150px;
+        height: 150px;
       }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <div class="box">I am a box</div>
+      <div class="box">I'm a box</div>
+    </div>
+    <div class="wrap">
+      <div class="box">
+        <img src="../fish-44.png" alt="fish" />
+      </div>
     </div>
   </body>
 </html>
